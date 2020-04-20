@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: printf
+# contributor: michak
+# key: pr
+# --
+printf("\n%$1", $2);
+

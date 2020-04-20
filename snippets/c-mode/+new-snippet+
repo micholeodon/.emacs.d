@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: scanf
+# contributor: michak
+# key: sc
+# --
+scanf("%$1", &$2);
+

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: includes
+# contributor: michak
+# key: inci
+# --
+#include<stdlib.h>
+#include<stdio.h>
+
+int main()
+{
+
+
+	return 0;
+}
