@@ -65,3 +65,7 @@
 
 ;; ace-window for efficient switching
 (global-set-key (kbd "C-x o") 'ace-window)
+
+;; copy target destination is vertical neighbour buffer
+;; source: https://emacs.stackexchange.com/questions/5603/how-to-quickly-copy-move-file-in-emacs-dired
+(setq dired-dwim-target t)
