@@ -19,6 +19,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
+;; Sublimity (minimap included)
+(require 'sublimity)
+;; (require 'sublimity-scroll)
+(require 'sublimity-map) ;; experimental
+;; (require 'sublimity-attractive)
 
 
 ;; MATLAB mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -31,6 +36,9 @@
 (global-set-key (kbd "C-z") 'matlab-shell-run-region-or-line)
 ;;(setq company-mode t)
 (setq company-dabbrev-downcase nil) ;; to prevent from auto-downcase
+(defun my-matlab-mode-hook () (setq fill-column 80) (toggle-truncate-lines) (display-line-numbers-mode) (fci-mode))
+(add-hook 'matlab-mode-hook 'my-matlab-mode-hook)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -104,4 +112,7 @@
 (load-file "~/.emacs.d/xpp.el")
 (autoload 'xpp-mode "xpp" "Enter XPP mode." t)
 (setq auto-mode-alist (cons '("\\.ode\\'" . xpp-mode) auto-mode-alist))
+
+;; HTML inline images html export (control size: https://emacs.stackexchange.com/questions/26363/downscaling-inline-images-in-org-mode)
+(setq org-image-actual-width nil)
 
