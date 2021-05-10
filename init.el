@@ -1,5 +1,15 @@
 ;; Michal Konrad Komorowski, August 2019
 ;; modular emacs config.
+(require 'package)
+;; use packages from marmalade
+;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+;; and the old elpa repo
+(add-to-list 'package-archives '("elpa-old" . "http://tromey.com/elpa/"))
+;; and automatically parsed versiontracking repositories.
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+;; melpa stable
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 
 (package-initialize)
@@ -35,16 +45,17 @@
 
 
 ;; LOAD CUSTOM CONFIG FILES
+
+;; additional .el files
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/emacs-htmlize/")
+
 (load "~/.emacs.d/init_michak/org_conf.el")
 (load "~/.emacs.d/init_michak/programming_conf.el")
 (load "~/.emacs.d/init_michak/try_config.el")
 (load "~/.emacs.d/init_michak/convenience_conf.el")
 (load "~/.emacs.d/init_michak/misc_config.el")
 (load "~/.emacs.d/init_michak/visual_conf.el")
-
-;; additional .el files
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-(add-to-list 'load-path "~/.emacs.d/lisp/emacs-htmlize/")
 
 ;;(load "ido-ubiquitous")
 

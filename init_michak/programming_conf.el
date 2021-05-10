@@ -20,10 +20,10 @@
 
 
 ;; Sublimity (minimap included)
-(require 'sublimity)
-;; (require 'sublimity-scroll)
-(require 'sublimity-map) ;; experimental
-;; (require 'sublimity-attractive)
+;;(require 'sublimity)
+;;;; (require 'sublimity-scroll)
+;;(require 'sublimity-map) ;; experimental
+;;;; (require 'sublimity-attractive)
 
 
 ;; MATLAB mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
