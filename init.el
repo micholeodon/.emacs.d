@@ -20,7 +20,7 @@
  '(isearch-allow-scroll t)
  '(package-selected-packages
    (quote
-	(highlight2clipboard ess fill-column-indicator sublimity htmlize treemacs epresent pdf-tools ace-window eyebrowse symon org-bullets goto-line-preview dimmer beacon hideshow-org dumb-jump highlight-symbol calfw-org org-preview-html plantuml-mode elpy yasnippet-classic-snippets ag flycheck multi-term helm swiper auto-highlight-symbol projectile wc-mode restart-emacs paradox multiple-cursors minimap matlab-mode markdown-mode magit haskell-mode dired-narrow company-quickhelp company-anaconda cl-libify cl-lib-highlight)))
+	(ox-clip toc-org dash org-make-toc highlight2clipboard ess fill-column-indicator sublimity htmlize treemacs epresent pdf-tools ace-window eyebrowse symon org-bullets goto-line-preview dimmer beacon hideshow-org dumb-jump highlight-symbol calfw-org org-preview-html plantuml-mode elpy yasnippet-classic-snippets ag flycheck multi-term helm swiper auto-highlight-symbol projectile wc-mode restart-emacs paradox multiple-cursors minimap matlab-mode markdown-mode magit haskell-mode dired-narrow company-quickhelp company-anaconda cl-libify cl-lib-highlight)))
  '(paradox-github-token t)
  '(tool-bar-mode nil))
 (custom-set-faces

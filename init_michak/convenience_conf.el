@@ -28,7 +28,7 @@
 
 (setq completion-ignore-case  t)
 (setq read-file-name-completion-ignore-case t)
-(load "~/Downloads/icomplete+.el")
+(load "~/.emacs.d/lisp/icomplete+.el")
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (find-file "~/.")
 
