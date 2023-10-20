@@ -69,7 +69,8 @@
 ;; GIT ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
-
+;; NOT WORKING: to fix magit error: https://github.com/magit/magit/issues/4072
+;;(setq debug-on-error '(wrong-type-argument) debug-on-signal t)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 

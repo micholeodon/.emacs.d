@@ -140,3 +140,13 @@
 (require 'symon)
 (symon-mode)
 
+
+;; prevent accidentally killing scratch
+;; (source:https://emacs.stackexchange.com/questions/19254/never-close-scratch)
+(add-hook 'kill-buffer-query-functions #'my/dont-kill-scratch)
+(defun my/dont-kill-scratch ()
+  (if (not (equal (buffer-name) "*scratch*"))
+      t
+    (message "Not allowed to kill %s, burying instead" (buffer-name))
+    (bury-buffer)
+    nil))

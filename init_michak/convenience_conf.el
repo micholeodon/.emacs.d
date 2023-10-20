@@ -107,3 +107,6 @@
 ;; prevent async-shell0-command window split
 (add-to-list 'display-buffer-alist
   (cons "\\*Async Shell Command\\*.*" (cons #'display-buffer-no-window nil)))
+
+;; scratch autosave on
+(persistent-scratch-autosave-mode 1)

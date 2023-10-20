@@ -28,3 +28,10 @@
 
 ;; f3 (file finder)
 (setq f3-default-directory "/")
+
+
+;; diff-hl (display status of git, SVN, etc. in dired + integration with magit)
+(add-hook 'dired-mode-hook 'diff-hl-dired-mode) ;; source: https://emacs.stackexchange.com/questions/9503/how-can-i-visualize-vcs-status-in-dired/9552#9552
+;; source: https://github.com/dgutov/diff-hl
+(add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
