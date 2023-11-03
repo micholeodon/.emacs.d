@@ -25,16 +25,6 @@
 ;; default programs to open 
 (require 'openwith)
 (openwith-mode t)
-(setq openwith-associations '(("\\.pdf\\'" "okular" (file))))
-
-;;(require 'openwith)
-;;(openwith-mode t)
-;;(setq openwith-associations '(("\\.docx\\'" "libreoffice" (file))))
-;;
-;;(require 'openwith)
-;;(openwith-mode t)
-;;(setq openwith-associations '(("\\.doc\\'" "libreoffice" (file))))
-;;
 
 ;; terminals?
 (defvar server-buffer-clients)
@@ -137,8 +127,8 @@
 
 
 ;; system monitor
-(require 'symon)
-(symon-mode)
+;;(require 'symon)
+;;(symon-mode)
 
 
 ;; prevent accidentally killing scratch

@@ -22,15 +22,13 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (wombat)))
+ '(custom-enabled-themes '(wombat))
  '(custom-safe-themes
-   (quote
-	("38143778a2b0b81fb7c7d0e286e5b0e27cd6b2ba1c3b0aa4efbc33e6ac2ed482" "2229862b727e0caa3b0a53152ef82d37819324bf5d2c657f859b2b0a475b34f7" default)))
+   '("38143778a2b0b81fb7c7d0e286e5b0e27cd6b2ba1c3b0aa4efbc33e6ac2ed482" "2229862b727e0caa3b0a53152ef82d37819324bf5d2c657f859b2b0a475b34f7" default))
  '(inhibit-startup-screen t)
  '(isearch-allow-scroll t)
  '(package-selected-packages
-   (quote
-	(persistent-scratch diff-hl ox-clip toc-org dash org-make-toc highlight2clipboard ess fill-column-indicator sublimity htmlize treemacs epresent pdf-tools ace-window eyebrowse symon org-bullets goto-line-preview dimmer beacon hideshow-org dumb-jump highlight-symbol calfw-org org-preview-html plantuml-mode elpy yasnippet-classic-snippets ag flycheck multi-term helm swiper auto-highlight-symbol projectile wc-mode restart-emacs paradox multiple-cursors minimap matlab-mode markdown-mode magit haskell-mode dired-narrow company-quickhelp company-anaconda cl-libify cl-lib-highlight)))
+   '(persistent-scratch diff-hl ox-clip toc-org dash org-make-toc highlight2clipboard ess fill-column-indicator sublimity htmlize treemacs epresent pdf-tools ace-window eyebrowse symon org-bullets goto-line-preview dimmer beacon hideshow-org dumb-jump highlight-symbol calfw-org org-preview-html plantuml-mode elpy yasnippet-classic-snippets ag flycheck multi-term helm swiper auto-highlight-symbol projectile wc-mode restart-emacs paradox multiple-cursors minimap matlab-mode markdown-mode magit haskell-mode dired-narrow company-quickhelp company-anaconda cl-libify cl-lib-highlight))
  '(paradox-github-token t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -49,6 +47,10 @@
 ;; additional .el files
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/lisp/emacs-htmlize/")
+(load "~/.emacs.d/multi-term.el")
+(load "~/.emacs.d/dimmer.el")
+(load "~/.emacs.d/openwith.el")
+
 
 (load "~/.emacs.d/init_michak/org_conf.el")
 (load "~/.emacs.d/init_michak/programming_conf.el")
